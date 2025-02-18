@@ -1,80 +1,73 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('lightning.jpg'); /* Replace with an actual path to a lightning themed image */
+    background: #000 url('lightning.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #e0e0e0;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+header, footer {
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
 }
 
-header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
     text-align: center;
+    padding: 50px;
 }
 
 h1 {
-    color: #ffd700;
+    font-size: 4em;
     text-shadow: 2px 2px 4px #000;
 }
 
-nav {
+audio {
     margin-top: 20px;
 }
 
-.tablink {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0 5px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.tablink:hover {
-    background-color: #45a049;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border-radius: 0 0 5px 5px;
-}
-
-.tabcontent h3 {
-    color: #ffd700;
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border: 2px solid #fff;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    margin: auto;
 }
 
-input, textarea, button {
+input, textarea {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background: #fff;
+    color: black;
+    border: none;
+    padding: 10px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background: #ddd;
 }
