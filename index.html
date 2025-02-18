@@ -3,52 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ Thunderbolt</title>
+    <title>ThunderDJ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>DJ Thunderbolt</h1>
-            <nav>
-                <button class="tablink" onclick="openTab(event, 'Upcoming')">Upcoming Events</button>
-                <button class="tablink" onclick="openTab(event, 'Mixes')">Mixes</button>
-                <button class="tablink" onclick="openTab(event, 'About')">About</button>
-                <button class="tablink" onclick="openTab(event, 'Contact')">Contact</button>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-        <div id="Upcoming" class="tabcontent">
-            <h3>Upcoming Events</h3>
-            <ul>
-                <li>Thunder Night @ Club Electric - March 15, 2025</li>
-                <li>Lightning Fest - April 20, 2025</li>
-            </ul>
-        </div>
+    <main>
+        <h1>ThunderDJ</h1>
+        <p>Experience the electrifying beats of the storm</p>
+        <audio controls>
+            <source src="thunderbeat.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
 
-        <div id="Mixes" class="tabcontent">
-            <h3>Latest Mixes</h3>
-            <ul>
-                <li><a href="#">Stormy Beats Mix</a></li>
-                <li><a href="#">Thunder Bass</a></li>
-            </ul>
-        </div>
-
-        <div id="About" class="tabcontent">
-            <h3>About DJ Thunderbolt</h3>
-            <p>With the energy of a thunderstorm, DJ Thunderbolt electrifies the dance floor with pulsating beats and electrifying mixes.</p>
-        </div>
-
-        <div id="Contact" class="tabcontent">
-            <h3>Contact</h3>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 ThunderDJ. All rights reserved.</p>
+    </footer>
 </body>
 </html>
